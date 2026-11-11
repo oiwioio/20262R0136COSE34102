@@ -1,7 +1,6 @@
 - Project1 과제 설명
 
 1. sslab_my_stack.c
-<br />
 먼저 integer node 형태를 이용하는 stack 구조를 사용하기 위해 os_2026_stack_node 구조체를 정의하였다.
 <br />
 구조체 내부에 들어가는 구성요소는 해당 node가 가지고 있는 값인 val, stack 구조상 내 밑에 있는 node의 주소를 가리키는 next가 있다.
@@ -15,3 +14,5 @@ push는 val로 입력값을 사용하고 next로 현재 top이 가리키는 node
 pop은 stack이 비어있으면 작동하지 않고, 그렇지 않다면 현재 top이 가리키는 node를 free하면서 top이 바로 밑에 있던 node를 가리키게 해 stack의 최상단에 있는 node가 삭제되도록 했다.
 <br />
 clear는 top에서부터 stack을 순차적으로 순회하며 모두 free하는 작업을 통해 stack을 초기화시키는 기능을 하도록 했다.
+
+2. call_my_stack.c
