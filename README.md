@@ -14,5 +14,8 @@ push는 val로 입력값을 사용하고 next로 현재 top이 가리키는 node
 pop은 stack이 비어있으면 작동하지 않고, 그렇지 않다면 현재 top이 가리키는 node를 free하면서 top이 바로 밑에 있던 node를 가리키게 해 stack의 최상단에 있는 node가 삭제되도록 했다.
 <br />
 clear는 top에서부터 stack을 순차적으로 순회하며 모두 free하는 작업을 통해 stack을 초기화시키는 기능을 하도록 했다.
+<br />
+
 
 2. call_my_stack.c
+system call을 위해 unistd.h, srand와 rand를 위해 stdlib.h, time.h를 사용했고, 테스트 및 예상 결과와의 비교를 위해 push값을 저장할 리스트와 pop 및 clear 시 return값을 받을 num을 선언했다.
