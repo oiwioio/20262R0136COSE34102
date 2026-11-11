@@ -11,3 +11,5 @@
 각 함수에서 현재 stack을 출력해야하므로 os2026_print_stack_locked로 자주 사용할 함수를 미리 만들어두었다.
 <br />
 push는 val로 입력값을 사용하고 next로 현재 top이 가리키는 node를 가리키는 새로운 node를 추가 후 top이 새로운 node를 가리키게 해 stack의 최상단에 새로운 node가 추가되도록 했다.
+<br />
+pop은 stack이 비어있으면 작동하지 않고, 그렇지 않다면 현재 top이 가리키는 node를 free하면서 top이 바로 밑에 있던 node를 가리키게 해 stack의 최상단에 있는 node가 삭제되도록 했다.
