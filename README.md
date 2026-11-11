@@ -13,3 +13,5 @@
 push는 val로 입력값을 사용하고 next로 현재 top이 가리키는 node를 가리키는 새로운 node를 추가 후 top이 새로운 node를 가리키게 해 stack의 최상단에 새로운 node가 추가되도록 했다.
 <br />
 pop은 stack이 비어있으면 작동하지 않고, 그렇지 않다면 현재 top이 가리키는 node를 free하면서 top이 바로 밑에 있던 node를 가리키게 해 stack의 최상단에 있는 node가 삭제되도록 했다.
+<br />
+clear는 top에서부터 stack을 순차적으로 순회하며 모두 free하는 작업을 통해 stack을 초기화시키는 기능을 하도록 했다.
